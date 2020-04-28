@@ -73,8 +73,10 @@ async function main() {
 	if (fs.existsSync(FILE_IDS_PATH)) {
 		var contents = fs.readFileSync(FILE_IDS_PATH)
 		fileIds = JSON.parse(contents)
+		console.log('Google Drive file ID list found')
 	}
 	
+	console.log('Downloading images')
 	const now = moment()
 	var last = round(now, moment.duration(5, 'minutes'), 'floor')
 	var lastStr = last.format('YMMDDHHmm')
@@ -102,8 +104,10 @@ async function main() {
 			})
 		})
 	})
-	
-	if (last != null) {
+
+	if (last == null) {
+		console.log('Failed')
+	} else {
 		var files = [DOWNLOAD_PATH+'01.png']
 		response.data.pipe(fs.createWriteStream(DOWNLOAD_PATH+'01.png'))
 		last = last.subtract(5, 'minutes')

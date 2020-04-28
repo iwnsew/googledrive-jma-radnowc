@@ -3,3 +3,4 @@ node_modules/
 client_secret.json
 token.json
 file_ids.json
+*.png
