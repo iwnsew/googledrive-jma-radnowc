@@ -26,7 +26,6 @@ const FILE_NAMES = [
 	process.env.FILE_NAME11,
 	process.env.FILE_NAME12
 ]
-const FILE_IDS = ['tmp1', 'tmp2', 'tmp3', 'tmp4', 'tmp5', 'tmp6', 'tmp7', 'tmp8', 'tmp9', 'tmp10', 'tmp11', 'tmp12', 'tmp13']
 const BASE_URL = 'https://www.jma.go.jp/jp/radnowc/imgs/nowcast/'+AREA_CODE+'/'
 const RADAR_BASE_URL = 'https://www.jma.go.jp/jp/radnowc/imgs/radar/'+AREA_CODE+'/'
 const SCOPES = ['https://www.googleapis.com/auth/drive']
