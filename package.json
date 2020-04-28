@@ -1,0 +1,26 @@
+{
+  "name": "googledrive-jma-radnowc",
+  "version": "0.0.1",
+  "description": "Upload JMA radnowc images to Google Drive",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/iwnsew/googledrive-jma-radnowc.git"
+  },
+  "author": "Masumi Shirakawa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iwnsew/googledrive-jma-radnowc/issues"
+  },
+  "homepage": "https://github.com/iwnsew/googledrive-jma-radnowc#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "googleapis": "^49.0.0",
+    "moment": "^2.24.0"
+  }
+}
