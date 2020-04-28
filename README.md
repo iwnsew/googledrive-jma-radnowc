@@ -55,7 +55,7 @@ Google Cloud Platform で Google Drive API を有効にし、「API とサービ
 10分ごとに cron で実行する場合はこんな感じになります。
 
 
-    8,18,28,38,48,58 * * * * export NODE_PATH=<プロジェクトの絶対パス> && cd <プロジェクトの絶対パス> && node index.js
+    8,18,28,38,48,58 * * * * cd <プロジェクトの絶対パス> && node index.js
 
 場合によっては node も絶対パスが必要かもしれません。
 
